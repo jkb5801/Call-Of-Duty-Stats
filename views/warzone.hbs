@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/brands.css" rel="stylesheet">
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/solid.css" rel="stylesheet">
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/fontawesome.css" rel="stylesheet">
+</head>
+
+<body class="navBody">
+    <header>
+        <div class="navbar">
+            <img src="/images/myLogo.jpg" alt="logo" class="logo">
+
+            <nav>
+                <ul>
+                    <li> <a onclick="home()">Home</a></li>
+                    <li class="dropdown"> <a>Multiplayer</a>
+                        <ul>
+                            <li><a onclick="modePage()">Modes</a></li>
+                            <li><a onclick="weaponPage()">Weapons</a></li>
+                        </ul>
+                    </li>
+                    <li> <a onclick="warzonePage()">Warzone</a></li>
+
+                </ul>
+            </nav>
+    </header>
+</body>
+
+<body class="stats">
+    <table class="war" id="war">
+    <caption><i class="fas fa-skull-crossbones fa-lg"></i> Battle Royal</caption>
+    {{#each warzone as |stat|}}
+    {{!-- {{#each stat.data as |data|}} --}}
+    <tr>
+        <td>{{stat.data.label}}:</td>
+        <td>{{stat.data.kills}}</td>
+    </tr>
+    {{!-- {{/each}} --}}
+    {{/each}}
+
+    </table>
+
+</body>
+<link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
+<script src="/javascripts/nav.js"></script>
+<link rel="stylesheet" type="text/css" href="/stylesheets/warzone.css">
+
+
+</html>

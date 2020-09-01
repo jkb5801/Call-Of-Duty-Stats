@@ -2,17 +2,21 @@
   "name": "codapi",
   "version": "0.0.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "nodemon ./bin/www "
   },
   "dependencies": {
+    "call-of-duty-api": "^1.1.14",
     "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "^4.16.4",
     "express-handlebars": "^4.0.4",
     "handlebars": "^4.7.6",
     "hbs": "^4.0.6",
     "http-errors": "^1.6.3",
+    "https": "^1.0.0",
     "morgan": "^1.9.1"
   },
   "devDependencies": {

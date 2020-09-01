@@ -1,3 +1,15 @@
-<h1>{{message}}</h1>
+<h1>{{message}}</h1><br>
+<button onclick="home()">Return to home page</button>
 <h2>{{error.status}}</h2>
 <pre>{{error.stack}}</pre>
+<script>
+    const Http = new XMLHttpRequest();
+    function home() {
+        const url = `http:/`
+        Http.open("GET", url, true);
+        Http.send();
+        Http.onreadystatechange = (e) => {
+            location.href = Http.responseURL;
+        };
+    }
+</script>

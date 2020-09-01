@@ -1,0 +1,65 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/weapons.css">
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/brands.css" rel="stylesheet">
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/solid.css" rel="stylesheet">
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/fontawesome.css" rel="stylesheet">
+    <script src="/javascripts/nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="/javascripts/filter.js"></script>
+
+</head>
+
+<body class="navBody">
+    <header>
+        <div class="navbar">
+            <img src="/images/myLogo.jpg" alt="logo" class="logo">
+
+            <nav>
+                <ul>
+                    <li> <a onclick="home()">Home</a></li>
+                    <li class="dropdown"> <a href="#">Multiplayer</a>
+                        <ul>
+                            <li><a onclick="modePage()">Modes</a></li>
+                            <li><a onclick="weaponPage()">Weapons</a></li>
+                        </ul>
+                    </li>
+                    <li> <a onclick="warzonePage()">Warzone</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="box">
+        <select class="selector" id="mySelect">
+            <option id="all">All</option>
+            <option id="AR">AR</option>
+            <option id="SMG">SMG</option>
+            <option id="Pistol">Pistol</option>
+            <option id="Sniper">Sniper</option>
+            <option id="Marksman">Marksman</option>
+            <option id="LMG">LMG</option>
+            <option id="Shotgun">Shotgun</option>
+        </select>
+        <input placeholder="Search..." class="search">
+        <button class="search-btn"><i class="fas fa-search fa-2x"></i></button>
+    </div>
+    <div class="weapon" id="weapon">
+        {{#each weapon as |weapons|}}
+        <div id="{{weapons.class}}" class="{{weapons.name}}">
+            <table name="{{weapons.name}}">
+                <caption>{{weapons.name}}</caption>
+                {{#each weapons.data as |stats|}}
+                <tr>
+                    <td>{{stats}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+        {{/each}}
+    </div>

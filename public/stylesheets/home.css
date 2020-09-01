@@ -1,0 +1,36 @@
+.playercard{
+    height: 90%;
+    width: 100%;
+    float: left;
+    padding-top: 8em;
+    border-spacing: 15px;
+    padding-bottom: 8em;
+    font-weight: normal;
+}
+table{
+    width: 80%;  
+    font-size: 24px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+table, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.bottom, .bottom td{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: none;
+}
+
+td{
+    padding:10px;
+
+}
+caption{
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: 30px;
+}

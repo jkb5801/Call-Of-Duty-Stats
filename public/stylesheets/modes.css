@@ -1,0 +1,22 @@
+caption {
+  text-align: center;
+  padding-bottom: 0.5em;
+  font-size: 30px;
+  min-width: 300px;
+}
+.modes {
+  border: 3px solid black;
+  border-collapse: collapse;
+  margin: 9.5em auto;
+  text-align: center;
+  width: auto;
+}
+.modess{
+    padding-top: 4em;
+}
+td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: .2em .2em;
+    font-size: 24px;
+}

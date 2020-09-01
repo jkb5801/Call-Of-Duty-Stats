@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/brands.css" rel="stylesheet">
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/solid.css" rel="stylesheet">
+    <link href="/stylesheets/fontawesome-free-5.13.0-web/css/fontawesome.css" rel="stylesheet">
+</head>
+
+<body class="navBody">
+    <header>
+        <div class="navbar">
+            <img src="/images/myLogo.jpg" alt="logo" class="logo">
+
+            <nav>
+                <ul>
+                    <li> <a>Home</a></li>
+                    <li class="dropdown"> <a>Multiplayer</a>
+                        <ul>
+                            <li><a onclick="modePage()">Modes</a></li>
+                            <li><a onclick="weaponPage()">Weapons</a></li>
+                        </ul>
+                    </li>
+                    <li> <a onclick="warzonePage()">Warzone</a></li>
+
+                </ul>
+            </nav>
+</header>
+</body>
+        </div>
+        <div class="playercard">
+
+            <table class="table content">
+
+                <caption><i class="fas fa-headset fa-2x"></i> {{username}}'s Player Card</caption>
+                <tr>
+                    <td>Level: {{level}}</td>
+                    <td>Total Games Played: {{games}}</td>
+                    <td>Total Score: {{score}}</td>
+                </tr>
+                <tr>
+                    <td>Wins: {{wins}}</td>
+                    <td>Losses: {{losses}}</td>
+                    <td>Win/Loss Ratio: {{winloss}}</td>
+                </tr>
+                <tr>
+                    <td>Kills: {{kills}}</td>
+                    <td>Deaths: {{deaths}}</td>
+                    <td>Kill/Death Ratio: {{kd}}</td>
+                </tr>
+                <tr>
+                    <td>Record Kills: {{recordkills}}</td>
+                    <td>Record Deaths: {{recorddeaths}}</td>
+                    <td>Record Kill Streak: {{killstreak}}</td>
+                </tr>
+                <tr>
+                    <td>Record Score: {{recordscore}}</td>
+                    <td>Score Per Minute: {{spm}}</td>
+                    <td>Score Per Game: {{spg}}</td>
+                </tr>
+                <tr>
+                    <td>Longest Win Streak: {{longestwinstreak}}</td>
+                    <td>Current Win Streak: {{winstreak}}</td>
+                    <td>Accuracy: {{accuracy}}</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+    
+
+
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
+<script src="/javascripts/nav.js"></script>
+
+
+</html>

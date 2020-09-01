@@ -1,0 +1,62 @@
+body,
+html{
+  min-height: 100%;
+
+}
+body{
+  background-size: cover;
+  background-image: url(https://blog.us.playstation.com/tachyon/2019/10/cod-mw-featured.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  width: 400px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-left: 5em;
+  align-self: start;
+  border: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  padding-bottom: 5em;
+  background-color: white;
+  margin-top: 3em;
+}
+
+.wrapper label {
+  display: block;
+  margin: 0.5em 0;
+  font-size: 18px;
+  color: #663131;
+}
+
+.wrapper input {
+  font-size: 18px;
+  padding: 0.5em;
+}
+
+.wrapper button {
+  color: #663131;
+  font-size: 20px;
+  margin-top: 1em;
+  width: 200px;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0 auto;
+  color: #663131;
+  padding-bottom: 1em;
+  width: 400px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+
+
+
