@@ -1,25 +1,26 @@
 caption {
-    text-align: center;
-    padding-bottom: 0.5em;
-    font-size: 30px;
-    min-width: 600px;
-  }
-  .war, td{
-    /* border: 3px solid black;
+  text-align: center;
+  padding-bottom: 0.5em;
+  font-size: 30px;
+  min-width: 600px;
+}
+.war,
+td {
+  /* border: 3px solid black;
     border-collapse: collapse; */
-    margin: 9.5em auto;
-    text-align: center;
-    width: auto;
-    font-size: 24px;
-  }
-  td{
-      padding: 20px;
-      border-bottom: 3px solid black;
-      border-top: none;
-      border-right: none;
-      border-left: none;
-      border-collapse: collapse;
-  }
-  tr:nth-child(even){
-      background-color: grey;
-  }
+  margin: 5.5em auto;
+  text-align: center;
+  width: auto;
+  font-size: 24px;
+}
+td {
+  padding: 20px;
+  border-bottom: 3px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: grey;
+}

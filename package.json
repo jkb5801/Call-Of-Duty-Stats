@@ -2,12 +2,12 @@
   "name": "codapi",
   "version": "0.0.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:3000",
   "scripts": {
     "start": "nodemon ./bin/www "
   },
   "dependencies": {
-    "call-of-duty-api": "^1.1.14",
+    "call-of-duty-api": "^2.2.2",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
